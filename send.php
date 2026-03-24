@@ -18,6 +18,14 @@ if (!empty($username) and !empty($passcode)) {
         </script>";
 
 } else {
+      echo "<script>
+    alert('Please fill all fields');
+    window.history.back();
+    </script>";
+
+}
+
+?>
 
     echo "<script type='text/javascript'>alert('Please enter correct username or password. Try again ');
         window.history.go(-1);
